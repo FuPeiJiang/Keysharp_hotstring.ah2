@@ -173,11 +173,12 @@ sure(rest, toSend) {
 }
 
 ; #Include %A_LineFile%\..\star_Hotstrings.ah2
+#Include %A_LineFile%\..\exampleHotstrings\3-sure.ah2
 
-sure("beasing","333333333333")
-sure("beating","thumping")
-sure("easter","devours")
-sure("easper","mono")
+; sure("beasing","333333333333")
+; sure("beating","thumping")
+; sure("easter","devours")
+; sure("easper","mono")
 
 ; sure("easper","mono")
 ; sure("easter","devours")
@@ -207,7 +208,7 @@ SacHook.OnChar := SacChar
 SacHook.Start()
 
 tree_:=root
-A_Clipboard:=printCircleObject(tree_)
+; A_Clipboard:=printCircleObject(tree_)
 
 ToolTip "ready"
 SoundPlay "*-1"

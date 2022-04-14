@@ -1,0 +1,22 @@
+delete comments
+(^| +);.*$
+
+filter hotstrings only
+^:
+
+https://stackoverflow.com/questions/3101366/regex-to-match-all-permutations-of-1-2-3-4-without-repetition#3101385
+^:(|\*|\?|\?\*):
+:*?:
+
+^:[*?C]{0,3}:
+
+^(?=[1-4]{4}$)(?!.*(.).*\1).*$
+
+^:(?=[*?C]{0,3}$)(?!.*(.).*\1).*$
+:*?:
+
+^:(?=[*?C]{0,3})(?![*?C]*(.)[*?C]*\1)[*?C]{0,3}:
+:*?:
+
+check: filter lines, \wt
+^((?!^:\*\?:).)*$
