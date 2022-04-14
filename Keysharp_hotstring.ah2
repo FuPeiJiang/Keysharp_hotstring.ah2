@@ -4,6 +4,9 @@ KeyHistory 0
 SendMode "Input" ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir A_ScriptDir ; Ensures a consistent starting directory.
 
+Persistent ;this is needed or else it just,, stops
+#MaxThreadsPerHotkey 4 ;idk why, but maybe it helps
+
 ; https://tree.nathanfriend.io/?s=%28%27options%21%28%27fancy%21true%7EfullPath3%7EtrailingSlash3%7ErootDot3%29%7E6%28%276%27%2F5+b0e0+a0*t02i09n08g%7BSEND+thumpingA8.8-9*.9-8.2-9.*-2.7*.-7%27%29%7Eversion%21%271%27%2927Default4%2F%7D5.b4bA058*+3%21false4%7BJump+5%5Cn6source%217+-8*29**A%7D0%01A987654320.-*
 ; https://tree.nathanfriend.io/?s=%28%27options%21%28%27fancy%21true%7EfullPath9%7EtrailingSlash9%7ErootDot9%29%7EB%28%27B%27%2FFbCe*aHt*.i*6n*GgAthumping2G4G5G0*646560*.s-eats2.4.5.0*8K7eCa*tHs*.Adevours28KCe-e%7D70%27%29%7Eversion%21%271%27%29*36-%7BJump+6IDefault-%2F%7D2%7D*3%5Cn4e-e25b-b26.+7Cb-b%7DC0F8+4+5I9%21falseA%7BSEND+Bsource%21C3.F3+G..H*+I+0K*450%01KIHGFCBA987654320.-*
 
