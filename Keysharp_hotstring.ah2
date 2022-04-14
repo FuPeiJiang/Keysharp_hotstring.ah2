@@ -235,17 +235,19 @@ SacChar(ih, char)
         return
     }
 
+    histIndex++
+    history[histIndex]:=tree_
+
     ;bad patch, but makes startup way faster
     ; (I didn't notice a huge difference though)
     ;now it's O(1) to O(2) instead of O(1)
     ;O(2) being: 2 Map Accesses
     if (newTree==root && root.Has(char)) {
         tree_:=root[char]
+    } else {
+        tree_:=newTree
     }
 
-    histIndex++
-    history[histIndex]:=tree_
-    tree_:=newTree
 }
 
 ~Backspace::{
